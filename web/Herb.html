@@ -1,0 +1,500 @@
+<!DOCTYPE>
+<html>
+	<head>
+	<title>KYARI</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+body{
+margin:0;
+background:white;
+}
+nav{
+width:100%;
+margin-top:100px;
+font-size:25px;
+font-family:Helvetica;
+}
+ul{
+margin:0 auto;
+float:left;
+background:linear-gradient(#228B22,#228B22);
+background:-moz-linear-gradient(#228B22,#228B22);
+background:-webkit-linear-gradient(#228B22,#228B22);
+width:97.3%;
+}
+ul li{
+list-style:none;
+margin:0;
+padding:0;
+float:left;
+display:inline;
+position:relative;
+}
+ul li a{
+/*border-right:1px dotted #fff;*/
+padding:27px 37px;
+color:#fff;
+text-decoration:none;
+display:inline-block;
+background:linear-gradient(#228B22,#228B22);
+background:-moz-linear-gradient(#228B22,#228B22);
+background:-webkit-linear-gradient(#228B22,#228B22);
+}
+ul li a:hover{
+background:linear-gradient(#006400,#228b22)
+background:-moz-linear-gradient(#006400,#228b22)
+background:-webkit-linear-gradient(#006400,#228b22)
+}
+ul li:hover> ul{
+visibility:visible;
+}
+ul ul{
+list-style:none;
+margin:0;
+padding:0;
+visibility:hidden;
+position:absolute;
+width:190px;
+border-top:1px solid #fff;
+}
+ul ul li a{
+padding:13px 19px;
+color:#fff;
+text-decoration:none;
+display:inline-block;
+float:left;
+width:188px;
+border-bottom:1px dotted #fff;
+}
+ul ul li ul{
+top:0;
+left:226px;
+}
+
+		#logo2{
+	float:right;
+	color:white;
+	width:250px;
+	font-size:62px;
+	font-family:Century Gothic;
+}   
+.container
+{
+	max-width: 1200px;
+	margin: auto;
+	background: #f2f2f2;
+	
+}
+.gallery
+{
+	margin: 9px;
+	border: 1px solid #ccc;
+	float: left;
+	width: 270px;
+}
+.gallery img
+{
+	width: 100%;
+	height: auto;
+       
+}
+.desc
+{	
+	padding: 15px;
+	text-align: center;
+	font-size:17px;
+	font-color:black;
+}
+.my
+{
+	margin: 4px;
+	border: 1px solid #ccc;
+	float: left;
+	width: 100px;
+}
+.my img
+{
+	width: 100%;
+	height: 10%;
+       
+}
+#logo2{
+	float:right;
+	color:white;
+	width:250px;
+	font-size:62px;
+	font-family:Century Gothic;
+}   
+.button {
+
+  font-size: 23px;
+  line-height: 30px;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  
+  
+  display: inline-block;
+  height: 27px;
+  padding: 0 10px;
+  border: 1px solid;
+  border-color: #2d86b6 #24659e #255796;
+  border-radius: 21px;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2) inset, 0 1px 1px rgba(1, 4, 8, 0.2);
+  
+
+  background-color: #52b6ec;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF52B6EC', endColorstr='#FF2E75CE');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #52b6ec), color-stop(100%, #2e75ce));
+  background-image: -webkit-linear-gradient(top, #52b6ec 0%, #2e75ce 100%);
+  background-image: -moz-linear-gradient(top, #52b6ec 0%, #2e75ce 100%);
+  background-image: -o-linear-gradient(top, #52b6ec 0%, #2e75ce 100%);
+  background-image: linear-gradient(top, #52b6ec 0%, #2e75ce 100%);
+    
+}
+
+.button:hover {
+  text-decoration: none;
+  border-color: #377cae #175a9c #0c4893;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2) inset, 0 1px 1px rgba(5, 64, 140, 0.2);
+  
+  background-color: #4fa6e4;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF4FA6E4', endColorstr='#FF1462C4');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4fa6e4), color-stop(100%, #1462c4));
+  background-image: -webkit-linear-gradient(top, #4fa6e4 0%, #1462c4 100%);
+  background-image: -moz-linear-gradient(top, #4fa6e4 0%, #1462c4 100%);
+  background-image: -o-linear-gradient(top, #4fa6e4 0%, #1462c4 100%);
+  background-image: linear-gradient(top, #4fa6e4 0%, #1462c4 100%);
+}
+.button:active {
+  border-color: #094b84 #094b84 #0f4585;
+  box-shadow: 0 1px 1px rgba(241, 243, 247, 0.2), 0 0 20px rgba(0, 0, 0, 0.5) inset;
+  
+  background-color: #1c7ec9;
+  
+}
+.footer{
+	text-align:center;
+	font-size:50px;
+	font-family:Century Gothic;
+	clear:both;
+        background-color: green;
+        color: white;
+
+}
+	</style>
+	</head>
+<body>
+
+	
+	<header style="font-size: 20px;">
+            <ul>
+	<li class="active"><a href="home.html">Home</a></li>
+<li><a href="Plants.html">All Plants</a>
+<ul>
+	<li><a href="#"> Plants by Type &raquo;</a>
+	<ul>
+	<li><a href="Avenue.html"> Avenue Trees</a></li>
+	<li><a href="Bonsai.html"> Bonsai Plants</a></li>
+	<li><a href="Fruit.html"> Fruit Plants</a></li>
+	<li><a href="Herb.html"> Herb Plants</a></li>
+	<li><a href="Kokedama.html"> Kokedama </a></li>
+</ul>
+	</li>
+	<li><a href="#"> Indoor Plants &raquo;</a>
+	<ul>
+	<li><a href="Indoor low maintence.html"> Indoor Low Maintenance Plants</a></li>
+	<li><a href="Indoor flowering plant.html"> Indoor Flowering Plants</a></li>
+	<li><a href="Indoor cactus.html"> Indoor Cactus and Succulents</a></li>
+	<li><a href="Indoor creepers and ferns.html"> Indoor Creepers and Ferns</a></li>
+</ul>
+	</li>
+	<li><a href="#"> Flowering Plants &raquo;</a>
+	<ul>
+	<li><a href="Rose.html"> Rose plants</a></li>
+	<li><a href="Jasmine.html"> Jasmine Plants</a></li>
+	<li><a href="Champa.html"> Plumeria/Champa Plants</a></li>
+	<li><a href="Hibiscus plant.html"> Hibiscus Plants</a></li>
+	<li><a href="Ixoro plant.html"> Ixoro Plants</a></li>
+</ul>
+	</li>
+	<li><a href="#"> Plants by Season &raquo;</a>
+	<ul>
+	<li><a href="Perennial plant.html"> Perennial Plants</a></li>
+	<li><a href="Winter plant.html"> Winter Plants</a></li>
+	<li><a href="Summer plant.html"> Summer Plants</a></li>
+	<li><a href="Monsoon plant.html"> Monsoon Plants</a></li>
+	<li><a href="Seasonal plant.html"> Seasonal Plants</a></li>
+</ul>
+	</li>
+	<li><a href="#"> Plants by Location &raquo;</a>
+	<ul>
+	<li><a href="Office desk plant.html"> Plant for Office Desk</a></li>
+	<li><a href="plants for bedroom.html"> Plants for Bedroom</a></li>
+	<li><a href="Plants for bathroom.html"> Plants for Bathroom</a></li>
+	<li><a href="plant for living room.html"> Plant for Living Room</a></li>
+	<li><a href="Terrace balcony.html"> Plant for Terrace Balcony </a></li>
+</ul>
+	</li>
+	<li><a href="#"> By Features and Uses &raquo;</a>
+	<ul>
+	<li><a href="Air purifying plant.html"> Air Purifying Plants</a></li>
+	<li><a href="AC room plant.html"> Plants for AC Rooms</a></li>
+	<li><a href="Medicinal plant.html"> Medicinal Plants</a></li>
+	<li><a href="Hanging plant.html"> Hanging Plants</a></li>
+	
+</ul>
+	</li>
+</ul>
+</li>
+<li><a href="Shop by Category.html">Shop By Category</a>
+<ul>
+	<li><a href="Plants.html"> Plants</a></li>
+	<li><a href="seeds.html"> Seeds</a></li>
+	<li><a href="Pots.html"> Pots</a></li>
+	<li><a href="Bulbs.html"> Bulbs</a></li>
+	<li><a href="Pebbles.html"> Pebbles </a></li>
+</ul>
+</li>
+<li><a href="About.html">About</a></li>
+<li><a href="contact.html">Contact us</a></li>
+<li><a href="logout.html">Logout</a></li>
+<li><a href="view.html">My Account</a></li>
+<div id="logo2">&#127795;KYARI </div>
+	</ul>
+</header>
+
+	<h1 style="margin-left:157px; font-size:40px;">Herb Plants </h1>
+	<p style="margin-left:157px; font-size:20px; margin-right:157px;">Growing your own herbs can be very rewarding and enjoyable for many gardeners.There's nothing like the taste of herbs picked fresh from your own kitchen garden. Herb plants are used mostly to garnish the delicious dishes and they impart a unique aroma and fragrance to food stuffs.
+
+There are so many great reasons to start an herb garden that will provide fresh herbs for everything from creating delicious dinners to brewing your own cups of tea. Plus, most herbs grow easily in a variety of conditions, making them ideal for new gardeners. Some Herb plants also possess medicinal value.Herbs can be grown in pots or you can grow any herb plant at your large backyard or an apartment with a balcony.
+Herb plants just need at least 6 hours of sunlight. Many herbs can also be grown all the year round and will save you buying expensive supermarket produce.</p>
+	<div class="container">
+
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\Herbs\nurserylive-5-most-sacred-plants-to-keep-at-home2_300x300.jpg">
+			<div class="desc">Most sacred plants to home
+                             <p style="font-size:20px;">Product ID : hrb101</p>
+                        <p style="font-size:26px;">&#8377; 500</p>
+                        <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\Herbs\nurserylive-ajwain-b_300x300.png">
+			<div class="desc">Ajwain plant
+                             <p style="font-size:20px;">Product ID : hrb102</p>
+                        <p style="font-size:26px;">&#8377; 340</p>
+                        <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\Herbs\nurserylive-Alspice-plant_300x300.jpg">
+			<div class="desc">Alspice plant
+                             <p style="font-size:20px;">Product ID : hrb103</p>
+                        <p style="font-size:26px;">&#8377; 360</p>
+                        <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\Herbs\nurserylive-basil_300x300.jpg">
+			<div class="desc">Basil
+                             <p style="font-size:20px;">Product ID : hrb104</p>
+                        <p style="font-size:26px;">&#8377; 450</p>
+                        <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\Herbs\nurserylive-cloves_300x300 (1).png">
+			<div class="desc">Cloves Plants
+                             <p style="font-size:20px;">Product ID : hrb105</p>
+                        <p style="font-size:26px;">&#8377; 600</p>
+                        <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\Herbs\nurserylive-damvel-plant_300x300.jpg">
+			<div class="desc">Damvel plant
+                             <p style="font-size:20px;">Product ID : hrb106</p>
+                        <p style="font-size:26px;">&#8377; 480</p>
+                        <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\Herbs\nurserylive-Hemigraphis_300x300.png">
+			<div class="desc">Hemigraphis
+                             <p style="font-size:20px;">Product ID : hrb107</p>
+                        <p style="font-size:26px;">&#8377; 370</p>
+                        <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\Herbs\nurserylive-kadipatta_300x300.png">
+			<div class="desc">kadipatta
+                             <p style="font-size:20px;">Product ID : hrb108</p>
+                        <p style="font-size:26px;">&#8377; 460</p>
+                        <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\Herbs\nurserylive-krishna-tulsi-tulsi-black-22_300x300.jpg">
+			<div class="desc">krishna tulsi plant
+                             <p style="font-size:20px;">Product ID : hrb109</p>
+                        <p style="font-size:26px;">&#8377; 830</p>
+                        <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\Herbs\nurserylive-lemon-basil_300x300.png">
+			<div class="desc">Lemon basil plant
+                             <p style="font-size:20px;">Product ID : hrb110</p>
+                        <p style="font-size:26px;">&#8377; 750</p>
+                        <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\Herbs\nurserylive-origanum-majorana-marjoram-marwa_300x300.jpg">
+			<div class="desc">Origanum majorana marwa
+                             <p style="font-size:20px;">Product ID : hrb111</p>
+                        <p style="font-size:26px;">&#8377; 780</p>
+                        <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\Herbs\nurserylive-piper-betel-maghai-paan-14_300x300.jpg">
+			<div class="desc">Piper betel maghai plant
+                              <p style="font-size:20px;">Product ID : hrb112</p>
+                        <p style="font-size:26px;">&#8377; 600</p>
+                        <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\Herbs\nurserylive-portulaca-white-plant_300x300.jpg">
+			<div class="desc">Portulaca white plant
+                              <p style="font-size:20px;">Product ID : hrb113</p>
+                        <p style="font-size:26px;">&#8377; 560</p>
+                        <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\Herbs\nurserylive-pudina-plant3_300x300.jpg">
+			<div class="desc">Pudina plant
+                              <p style="font-size:20px;">Product ID : hrb114</p>
+                        <p style="font-size:26px;">&#8377; 690</p>
+                        <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\Herbs\nurserylive-rosemary_300x300.png">
+			<div class="desc">Rosemary plant
+                              <p style="font-size:20px;">Product ID : hrb115</p>
+                        <p style="font-size:26px;">&#8377; 270</p>
+                        <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\Herbs\nurserylive-sage_300x300.png">
+			<div class="desc">Sage plant
+                              <p style="font-size:20px;">Product ID : hrb116</p>
+                        <p style="font-size:26px;">&#8377; 350</p>
+                        <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\Herbs\nurserylive-thyme-plant_300x300.jpg">
+			<div class="desc">Thyme plant
+                              <p style="font-size:20px;">Product ID : hrb117</p>
+                        <p style="font-size:26px;">&#8377; 240</p>
+                        <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\Herbs\nurserylive-top-3-herbs-for-healthy-homes4_300x300.jpg">
+			<div class="desc">Herbs for healthy home
+                              <p style="font-size:20px;">Product ID : hrb118</p>
+                        <p style="font-size:26px;">&#8377; 290</p>
+                        <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\Herbs\nurserylive-top-3-medicinal-herbs6_300x300 (1).jpg">
+			<div class="desc">Top 3 medicinal herbs
+                              <p style="font-size:20px;">Product ID : hrb119</p>
+                        <p style="font-size:26px;">&#8377; 580</p>
+                        <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\Herbs\nurserylive-top-5-herbal-plant5_300x300.jpg">
+			<div class="desc">Top 5 herbal plant
+                              <p style="font-size:20px;">Product ID : hrb120</p>
+                        <p style="font-size:26px;">&#8377; 610</p>
+                        <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\Herbs\nurserylive-top-5-medicinal-herb-plants-for-monsoon1_300x300.jpg">
+			<div class="desc">Top 5 medicinal herb plants
+                              <p style="font-size:20px;">Product ID : hrb121</p>
+                        <p style="font-size:26px;">&#8377; 510</p>
+                        <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\Herbs\nurserylive-top-5-plants-for-healthy-homes4_300x300.jpg">
+			<div class="desc">Top 5 plants for healthy homes
+                              <p style="font-size:20px;">Product ID : hrb122</p>
+                        <p style="font-size:26px;">&#8377; 570</p>
+                        <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\Herbs\stevia-rebaudiana_300x300.jpg">
+			<div class="desc">Stevia rebaudiana
+                          <p style="font-size:20px;">Product ID : hrb123</p>
+                        <p style="font-size:26px;">&#8377; 670</p>
+                        <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\Herbs\tulsi-green_300x300.png">
+			<div class="desc">Tulsi green plant
+                              <p style="font-size:20px;">Product ID : hrb124</p>
+                        <p style="font-size:26px;">&#8377; 720</p>
+                        <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	
+</div>
+<div class="footer">  
+  <p style="font-size:20px;">  <br>Copyright &copy; 2020 Kyari.All Rights Reserved.  <br><br></p>
+</div>
+</body>
+</html>

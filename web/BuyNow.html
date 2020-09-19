@@ -1,0 +1,182 @@
+<html>
+<head>
+<title> KYARI </title>
+<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+            *{
+                box-sizing: border-box;
+            }
+            .row{
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                margin: 0 11px;
+            }
+            .col-50{
+                -ms-flex: 50%;
+                flex: 50%;
+            }
+            .col-75{
+                -ms-flex: 75%;
+                flex: 75%;
+            }
+          
+           .container{
+               background-color: #f2f2f2;
+               padding: 5px 30px 100px 50px;
+               border: 1px solid lightgray;
+               border-radius: 3px;
+           }
+           input[type=text]{
+               width: 93%;
+               margin-bottom: 20px;
+               padding: 13px;
+               border: 1px solid #ccc;
+               border-radius: 3px;
+           }
+          label{
+               margin-bottom: 10px;
+               display: block;
+           }
+           .btn{
+               background-color: #4CAF50;
+               color: white;
+               padding: 12px;
+               margin: 10px 0;
+               border: none;
+               width: 100%;
+               border-radius: 3px;
+               cursor: pointer;
+               font-size: 17px;
+           }
+           .btn:hover{
+               background-color: #45a049;
+           }
+          a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  
+}
+	</style>
+        </head>
+<body>
+    <form id="form1" action="Payment_Information" method="get">
+        <h2>Payment Information</h2>
+            <div class="row">
+                 <div class="col-75">
+                    <div class="container">
+                         <form action="Payment_Information" method="get">
+                            <div class="row">
+                                 <div class="col-50">
+                                       <h3>Billing Address</h3>
+                                         <label for="fname">Product Id</label>
+                                       <input type="text" name="pid" placeholder="acc101" required="required" />
+                                     <label for="fname">User Id</label>
+                                       <input type="text" name="uid" placeholder="Varsha Patidar"  required="required" />
+                                         <label for="fname">Full Name</label>
+                                       <input type="text" name="fname" placeholder="Varsha Patidar" pattern="[A-Za-z]*" minlength="3" maxlength="15" required="required" />
+                                       <label for="state"><i class="fa fa-envelope"></i> State</label>
+                                       <input type="text" name="state" placeholder="xyz" minlength="3" maxlength="35" required="required">
+                                       <label for="city"><i class="fa fa-institution"></i> City</label>
+                                       <input type="text" name="city" placeholder="New York"  minlength="1" maxlength="25" required="required">
+                                       <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                                       <input type="text" name="address" placeholder="542 W. 15th Street" minlength="5" maxlength="50" required="required">
+                                           <div class="row">
+                                                
+                                           </div>
+                                 </div>
+                                 <div class="col-50">
+                                      <h3>Payment</h3>
+                                      <label for="fname">Accepted Cards</label>
+                                          
+                                          <label for="cname">Name on Card</label>
+                                          <input type="text" name="cardname" placeholder="Varsha Patidar" required="required">
+                                          <label for="ccnum">Credit card number</label>
+                                          <input type="text" name="cardnumber" placeholder="1111-2222-3333-4444" pattern="[0-9]*" minlength="16" maxlength="16"   required="required">
+                                          <div class="row">
+			                       <div class="col-50">
+                                                    <label for="expmonth" name="expmonth">Exp Month</label>
+                                                          <select name="expmonth">
+                                                    	  <option value="January">January</option>
+                                                       	  <option value="Feburary">February</option>
+                                                	  <option value="March">March</option>
+                                                	  <option value="March">April</option>
+                                                    	  <option value="March">May</option>
+                                                	  <option value="March">June</option>
+                                                	  <option value="March">July</option>
+                                                	  <option value="March">August</option>
+                                                	  <option value="March">September</option>
+                                                	  <option value="March">October</option>
+                                                	  <option value="March">November</option>
+                                                	  <option value="March">December</option>
+                                                    	  </select>
+                                               </div>
+                                               <div class="col-50">
+                                                    <label for="expyear" name="expyear">Exp Year</label>
+                                                          <select name="expyear">
+                                                	  <option value="2021">2021</option>
+                                                    	  <option value="2022">2022</option>
+                                                    	  <option value="2023">2023</option>
+                                                       	  <option value="2024">2024</option>
+                                                	  <option value="2025">2025</option>
+                                                	  <option value="2026">2026</option>
+                                                    	  <option value="2027">2027</option>
+                                                	  <option value="2028">2028</option>
+                                                	  <option value="2029">2029</option>
+                                                	  <option value="2030">2030</option>
+                                                    	  <option value="2031">2031</option>
+                                                    	  <option value="2032">2032</option>
+                                                          <option value="2033">2033</option>
+                                                          <option value="2034">2034</option>
+                                                	  <option value="2035">2035</option>
+                                                	  </select>
+                                               </div>
+                                               <div class="col-50"><br>
+                                                   <label for="cvv">CVV</label>
+                                                   <input type="text" name="cvv" placeholder="352" pattern="[0-9]*" maxlength="3" minlength="3" required="required">
+                                               </div>
+                                               <br><br><br>
+                                                <div class="col-50">
+                                                       <label for="contact">Contact Number</label>
+                                                       <input type="text" name="contact" placeholder="1234567890" pattern="[0-9]{10}" minlength="10" maxlength="10"  required="required">
+                                                 </div>
+                                                <div class="col-50">
+                                                       <label for="contact">Phone Number(Optional)</label>
+                                                       <input type="text" name="ocontact" placeholder="63576776746" pattern="[0-9]{10}" minlength="10" maxlength="10">
+                                                 </div>
+                                                 <div class="col-50">
+                                                       <label for="pin">Pin Code</label>
+                                                       <input type="text" name="pin" placeholder="123456" pattern="[0-9]{6}" minlength="6" maxlength="6"  required="required">
+                                                 </div>
+                                                <div class="col-50">
+                                                       <label for="pin">Email</label>
+                                                       <input type="email" name="email" placeholder="varsha@gmail.com"  required="required">
+                                                 </div>
+                                         </div>
+                                 </div>
+                            </div>
+                            <label>
+                                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                            </label>
+                            <input id="input-button" type="submit" value="Continue to checkout" class="btn"/>
+                       </form>
+                    </div>
+                </div>
+            </div>
+    </form>
+</body>
+
+
+</html>

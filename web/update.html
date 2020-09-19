@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> KYARI </title>
+<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=password], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.btn{
+               background-color: #4CAF50;
+               color: white;
+               padding: 12px;
+               margin: 10px 0;
+               border: none;
+               width: 100%;
+               border-radius: 3px;
+               cursor: pointer;
+               font-size: 17px;
+           }
+           .btn:hover{
+               background-color: #45a049;
+           }
+           
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<center><h1>Your Answer is correct , Now you can Able to change Your Password </h1></center>
+
+<div class="container">
+    <form action="updatepass" method="get">
+        
+   <b> <label for="fname"> Enter user Id</label></b>
+    <input type="text"  name="uid"  required="required"/>
+ 
+   <b> <label for="fname"> New_Password</label></b>
+    <input type="password" id="password" name="pass" placeholder="mypass" onchange='check_pass();' required="required" />
+
+    <b><label for="country"> Confirm_Password</label></b>
+   <input type="password" id="confirm_password" name="cpass" placeholder="mypass" onchange='check_pass();' required="required" />
+      
+
+   
+<input type="submit" name="submit" value="Register" class="btn"  id="submit" />
+      
+   </form>
+</div>
+
+</body>
+  <script>
+       function check_pass()
+        {
+            if(document.getElementById('password').value == document.getElementById('confirm_password').value)
+            {
+                document.getElementById('submit').disabled = false;
+                
+            }
+            else
+            {
+                document.getElementById('submit').disabled = true;
+            }
+        }
+    </script>
+</html>

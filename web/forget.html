@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> KYARI </title>
+<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  font-size: 20px;
+  padding: 15px;
+  color: white;
+  background-color: green;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: green;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<center><h1>Before Changing the Password ,Enter the Answer of Security Question </h1></center>
+
+<div class="container">
+    <form action="forgetpass" method="get">
+        
+   <b> <label for="fname">User Id</label></b>
+    <input type="text"  name="usr"  required="required"/>
+ 
+    <b><label for="lname">select the security question </label></b>
+   <select name="security">
+                                                                                                    
+                                                	  <option value="What Primary school did you attend ?">What Primary school did you attend ?</option>
+                                                    	  <option value="in what city was your first full time job ?">in what city was your first full time job ?</option>
+                                                    	  <option value="in what city did you meet your partner ?">in what city did you meet your partner ?</option>
+                                                       	  <option value="What time of the day where you born ?">What time of the day where you born ?</option>
+                                                	  <option value="in what city did you parents meet?">in what city did you parents meet?</option>
+                                                	  </select><br><br>
+
+    <b><label for="country"> Answer the question</label></b>
+    <input type="text" name="answer"  required="required"/><br>
+      <input type="submit" name="submit" value="Register" class="btn"  id="submit" />
+      
+   </form>
+</div>
+
+</body>
+</html>

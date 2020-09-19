@@ -1,0 +1,410 @@
+<!DOCTYPE>
+<html>
+	<head>
+	<title>KYARI</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+body{
+margin:0;
+background:white;
+}
+nav{
+width:100%;
+margin-top:100px;
+font-size:25px;
+font-family:Helvetica;
+}
+ul{
+margin:0 auto;
+float:left;
+background:linear-gradient(#228B22,#228B22);
+background:-moz-linear-gradient(#228B22,#228B22);
+background:-webkit-linear-gradient(#228B22,#228B22);
+width:97.3%;
+}
+ul li{
+list-style:none;
+margin:0;
+padding:0;
+float:left;
+display:inline;
+position:relative;
+}
+ul li a{
+/*border-right:1px dotted #fff;*/
+padding:27px 37px;
+color:#fff;
+text-decoration:none;
+display:inline-block;
+background:linear-gradient(#228B22,#228B22);
+background:-moz-linear-gradient(#228B22,#228B22);
+background:-webkit-linear-gradient(#228B22,#228B22);
+}
+ul li a:hover{
+background:linear-gradient(#006400,#228b22)
+background:-moz-linear-gradient(#006400,#228b22)
+background:-webkit-linear-gradient(#006400,#228b22)
+}
+ul li:hover> ul{
+visibility:visible;
+}
+ul ul{
+list-style:none;
+margin:0;
+padding:0;
+visibility:hidden;
+position:absolute;
+width:190px;
+border-top:1px solid #fff;
+}
+ul ul li a{
+padding:13px 19px;
+color:#fff;
+text-decoration:none;
+display:inline-block;
+float:left;
+width:188px;
+border-bottom:1px dotted #fff;
+}
+ul ul li ul{
+top:0;
+left:226px;
+}
+
+		#logo2{
+	float:right;
+	color:white;
+	width:250px;
+	font-size:62px;
+	font-family:Century Gothic;
+}   
+.container
+{
+	max-width: 1200px;
+	margin: auto;
+	background: #f2f2f2;
+	
+}
+.gallery
+{
+	margin: 9px;
+	border: 1px solid #ccc;
+	float: left;
+	width: 270px;
+}
+.gallery img
+{
+	width: 100%;
+	height: auto;
+       
+}
+.desc
+{	
+	padding: 15px;
+	text-align: center;
+	font-size:17px;
+	font-color:black;
+}
+.my
+{
+	margin: 4px;
+	border: 1px solid #ccc;
+	float: left;
+	width: 100px;
+}
+.my img
+{
+	width: 100%;
+	height: 10%;
+       
+}
+#logo2{
+	float:right;
+	color:white;
+	width:250px;
+	font-size:62px;
+	font-family:Century Gothic;
+}   
+.button {
+
+  font-size: 23px;
+  line-height: 30px;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  
+  
+  display: inline-block;
+  height: 27px;
+  padding: 0 10px;
+  border: 1px solid;
+  border-color: #2d86b6 #24659e #255796;
+  border-radius: 21px;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2) inset, 0 1px 1px rgba(1, 4, 8, 0.2);
+  
+
+  background-color: #52b6ec;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF52B6EC', endColorstr='#FF2E75CE');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #52b6ec), color-stop(100%, #2e75ce));
+  background-image: -webkit-linear-gradient(top, #52b6ec 0%, #2e75ce 100%);
+  background-image: -moz-linear-gradient(top, #52b6ec 0%, #2e75ce 100%);
+  background-image: -o-linear-gradient(top, #52b6ec 0%, #2e75ce 100%);
+  background-image: linear-gradient(top, #52b6ec 0%, #2e75ce 100%);
+    
+}
+
+.button:hover {
+  text-decoration: none;
+  border-color: #377cae #175a9c #0c4893;
+  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2) inset, 0 1px 1px rgba(5, 64, 140, 0.2);
+  
+  background-color: #4fa6e4;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF4FA6E4', endColorstr='#FF1462C4');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4fa6e4), color-stop(100%, #1462c4));
+  background-image: -webkit-linear-gradient(top, #4fa6e4 0%, #1462c4 100%);
+  background-image: -moz-linear-gradient(top, #4fa6e4 0%, #1462c4 100%);
+  background-image: -o-linear-gradient(top, #4fa6e4 0%, #1462c4 100%);
+  background-image: linear-gradient(top, #4fa6e4 0%, #1462c4 100%);
+}
+.button:active {
+  border-color: #094b84 #094b84 #0f4585;
+  box-shadow: 0 1px 1px rgba(241, 243, 247, 0.2), 0 0 20px rgba(0, 0, 0, 0.5) inset;
+  
+  background-color: #1c7ec9;
+  
+}
+.footer{
+	text-align:center;
+	font-size:50px;
+	font-family:Century Gothic;
+	clear:both;
+        background-color: green;
+        color: white;
+
+}
+	</style>
+	</head>
+<body>
+
+	
+	<header style="font-size: 20px;">
+            <ul>
+	<li class="active"><a href="home.html">Home</a></li>
+<li><a href="Plants.html">All Plants</a>
+<ul>
+	<li><a href="#"> Plants by Type &raquo;</a>
+	<ul>
+	<li><a href="Avenue.html"> Avenue Trees</a></li>
+	<li><a href="Bonsai.html"> Bonsai Plants</a></li>
+	<li><a href="Fruit.html"> Fruit Plants</a></li>
+	<li><a href="Herb.html"> Herb Plants</a></li>
+	<li><a href="Kokedama.html"> Kokedama </a></li>
+</ul>
+	</li>
+	<li><a href="#"> Indoor Plants &raquo;</a>
+	<ul>
+	<li><a href="Indoor low maintence.html"> Indoor Low Maintenance Plants</a></li>
+	<li><a href="Indoor flowering plant.html"> Indoor Flowering Plants</a></li>
+	<li><a href="Indoor cactus.html"> Indoor Cactus and Succulents</a></li>
+	<li><a href="Indoor creepers and ferns.html"> Indoor Creepers and Ferns</a></li>
+</ul>
+	</li>
+	<li><a href="#"> Flowering Plants &raquo;</a>
+	<ul>
+	<li><a href="Rose.html"> Rose plants</a></li>
+	<li><a href="Jasmine.html"> Jasmine Plants</a></li>
+	<li><a href="Champa.html"> Plumeria/Champa Plants</a></li>
+	<li><a href="Hibiscus plant.html"> Hibiscus Plants</a></li>
+	<li><a href="Ixoro plant.html"> Ixoro Plants</a></li>
+</ul>
+	</li>
+	<li><a href="#"> Plants by Season &raquo;</a>
+	<ul>
+	<li><a href="Perennial plant.html"> Perennial Plants</a></li>
+	<li><a href="Winter plant.html"> Winter Plants</a></li>
+	<li><a href="Summer plant.html"> Summer Plants</a></li>
+	<li><a href="Monsoon plant.html"> Monsoon Plants</a></li>
+	<li><a href="Seasonal plant.html"> Seasonal Plants</a></li>
+</ul>
+	</li>
+	<li><a href="#"> Plants by Location &raquo;</a>
+	<ul>
+	<li><a href="Office desk plant.html"> Plant for Office Desk</a></li>
+	<li><a href="plants for bedroom.html"> Plants for Bedroom</a></li>
+	<li><a href="Plants for bathroom.html"> Plants for Bathroom</a></li>
+	<li><a href="plant for living room.html"> Plant for Living Room</a></li>
+	<li><a href="Terrace balcony.html"> Plant for Terrace Balcony </a></li>
+</ul>
+	</li>
+	<li><a href="#"> By Features and Uses &raquo;</a>
+	<ul>
+	<li><a href="Air purifying plant.html"> Air Purifying Plants</a></li>
+	<li><a href="AC room plant.html"> Plants for AC Rooms</a></li>
+	<li><a href="Medicinal plant.html"> Medicinal Plants</a></li>
+	<li><a href="Hanging plant.html"> Hanging Plants</a></li>
+	
+</ul>
+	</li>
+</ul>
+</li>
+<li><a href="Shop by Category.html">Shop By Category</a>
+<ul>
+	<li><a href="Plants.html"> Plants</a></li>
+	<li><a href="seeds.html"> Seeds</a></li>
+	<li><a href="Pots.html"> Pots</a></li>
+	<li><a href="Bulbs.html"> Bulbs</a></li>
+	<li><a href="Pebbles.html"> Pebbles </a></li>
+</ul>
+</li>
+<li><a href="About.html">About</a></li>
+<li><a href="contact.html">Contact us</a></li>
+<li><a href="logout.html">Logout</a></li>
+<li><a href="view.html">My Account</a></li>
+<div id="logo2">&#127795;KYARI </div>
+	</ul>
+</header>
+
+	<h1 style="margin-left:157px; font-size:40px;">Kokedama </h1>
+	<p style="margin-left:157px; font-size:20px; margin-right:157px;">Kokedama is a ball of soil, covered with moss, in which an ornamental plant grows. It is Japanese art but, now-a-days it is being more popular everywhere because of its truly unique way of displaying your favorite plants and creating an indoor plant feature.
+
+This craft technique is the sister of Bonsai. Kokedama has certain similarities with bonsai, seeking to recreate a natural habitat that fosters relaxation and well-being environments. Kokedama, like any decorative plant, help to purify the air and create a relaxed atmosphere, which means a reduction in the feeling of stress.
+You can create Kokedama by using different plant varieties like shrubs, Indoor plants, flowering plants, in original and ecological form and much more natural than anything else. Kokedama can enhance the beauty of your house, office, balcony, just hang them and enjoy the greenery around you.  .</p>
+	<div class="container">
+
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\kokedama\nurserylive-add-unique-look-to-your-garden-with-decorative-moss-balls-kokedama_300x300.jpg">
+			<div class="desc">Moss balls kokedama
+                             <p style="font-size:20px;">Product ID : kkd101</p>
+                          <p style="font-size:26px;">&#8377; 1380</p>
+                            <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\kokedama\nurserylive-air-purifier-golden-money-plant-moss-ball-kokedama8_300x300.jpg">
+			<div class="desc">Air purifier golden money plant
+                            <p style="font-size:20px;">Product ID : kkd102</p>
+                         <p style="font-size:26px;">&#8377; 1550</p>
+                            <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\kokedama\nurserylive-air-purifier-green-money-plant-moss-ball-kokedama-25_300x300.jpg">
+			<div class="desc">Air purifier green money plant
+                            <p style="font-size:20px;">Product ID : kkd103</p>
+                           <p style="font-size:26px;">&#8377; 1400</p>
+                            <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\kokedama\nurserylive-air-purifier-green-money-plant-moss-ball-with-saucer-kokedama_300x300.jpg">
+			<div class="desc">Moss ball with saucer kokedama
+                            <p style="font-size:20px;">Product ID : kkd104</p>
+                         <p style="font-size:26px;">&#8377; 1740</p>
+                            <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\kokedama\nurserylive-air-purifier-golden-money-plant-moss-ball-with-plate-kokedama_300x300.jpg">
+			<div class="desc">Air purifier plant with plate
+                            <p style="font-size:20px;">Product ID : kkd105</p>
+                         <p style="font-size:26px;">&#8377; 1660</p>
+                            <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\kokedama\nurserylive-air-purifier-moss-balls-for-healthy-garden-kokedama_300x300.jpg">
+			<div class="desc">Moss balls for healthy garden
+                            <p style="font-size:20px;">Product ID : kkd106</p>
+                        <p style="font-size:26px;">&#8377; 1850</p>
+                            <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\kokedama\nurserylive-elegant-moss-balls-for-beautiful-garden-kokedama_300x300.jpg">
+			<div class="desc">Elegant moss balls kokedama
+                            <p style="font-size:20px;">Product ID : kkd107</p>
+                        <p style="font-size:26px;">&#8377; 1540</p>
+                            <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\kokedama\nurserylive-everlasting-sansevieria-plant-moss-ball-kokedama-1_300x300.jpg">
+			<div class="desc">Everlasting sansevieria plant
+                            <p style="font-size:20px;">Product ID : kkd108</p>
+                           <p style="font-size:26px;">&#8377; 1690</p>
+                            <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\kokedama\nurserylive-everlasting-sansevieria-plant-moss-ball-with-plate-kokedama_300x300.jpg">
+			<div class="desc">Everlasting sansevieria plant
+                            <p style="font-size:20px;">Product ID : kkd109</p>
+                         <p style="font-size:26px;">&#8377; 2000</p>
+                            <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\kokedama\nurserylive-low-maintenance-syngonium-plant-moss-ball-kokedama-1_300x300.jpg">
+			<div class="desc">Low maintenance syngonium 
+                            <p style="font-size:20px;">Product ID : kkd110</p>
+                        <p style="font-size:26px;">&#8377; 1200</p>
+                            <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\kokedama\nurserylive-low-maintenance-syngonium-plant-moss-ball-with-plate-kokedama_300x300.jpg">
+			<div class="desc">Low maintenance syngonium 
+                            <p style="font-size:20px;">Product ID : kkd111</p>
+                          <p style="font-size:26px;">&#8377; 1760</p>
+                            <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\kokedama\nurserylive-money-plant-kokedama-with-ceramic-plate_300x300.jpg">
+			<div class="desc">Money plant kokedama
+                              <p style="font-size:20px;">Product ID : kkd112</p>
+                         <p style="font-size:26px;">&#8377; 1850</p>
+                            <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\kokedama\nurserylive-pack-of-3-trendy-moss-balls-kokedama_300x300.jpg">
+			<div class="desc">Pack of 3 trendy kokedama
+                              <p style="font-size:20px;">Product ID : kkd113</p>
+                          <p style="font-size:26px;">&#8377; 1930</p>
+                            <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+	
+	<div class="gallery">
+		<img src="C:\Users\Varsha Patidar\Documents\NetBeansProjects\Kyari\web\Images\kokedama\nurserylive-snake-plant-kokedama-with-wooden-bowl_300x300.jpg">
+			<div class="desc">Snake plant kokedama
+                              <p style="font-size:20px;">Product ID : kkd114</p>
+                          <p style="font-size:26px;">&#8377; 1690</p>
+                            <p><a href="BuyNow.html" class="button">Buy Now</a></p>
+                        </div>
+	</div>
+
+	
+</div>
+<div class="footer">  
+  <p style="font-size:20px;">  <br>Copyright &copy; 2020 Kyari.All Rights Reserved.  <br><br></p>
+</div>
+</body>
+</html>

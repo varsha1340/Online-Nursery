@@ -1,0 +1,109 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>KYARI</title>
+<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{
+         box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.hero
+{
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	position: absolute;
+}
+.form-box
+{
+	width: 1200px;
+	height: 690px;
+	position: relative;
+	margin: 1% auto;
+	background: #f2f2f2;
+	padding: 3px;
+	overflow: hidden;
+}
+.input-field
+{
+	width: 70%;
+	padding: 5px 0;
+	margin: 2px 5;
+	margin-top:13px;
+	margin-left:11px;
+        margin-right: 30px;
+}
+.chech-box
+{
+	margin: 3px 10px 20px 13;
+}
+.btn{
+               background-color: #4CAF50;
+               color: white;
+               padding: 12px;
+               margin: 10px 0;
+               border: none;
+               width: 100%;
+               border-radius: 3px;
+               cursor: pointer;
+               font-size: 17px;
+           }
+           .btn:hover{
+               background-color: #45a049;
+           }
+           
+</style>
+</head>
+<body>
+     <form action="reg" method="get">
+<div class="hero">
+		<div class="form-box">
+
+                   
+<h2 style="margin-left:14px; margin-top:7px; font-size: 30px;">Register</h2>
+<br>
+<hr><pre><b>
+		User Name:            <input type="text" class="input-field" name="uname" placeholder="Varsha Patidar" pattern="[a-zA-Z]*[ ][a-zA-Z]*" minlength="3" maxlength="15" required="required" />
+		Mobile Number:     <input type="number" class="input-field" name="mob" placeholder="1234567890"  pattern="[0-9]{10}" minlength="10" maxlength="10"  required="required"/>
+		Email Id:                <input type="email" class="input-field" name="email" placeholder="varsha@gmail.com" required="required" />
+		Enter Password:    <input type="password" class="input-field" id="password" name="pass" placeholder="mypass" onchange='check_pass();' required="required" />
+		Confirm Password:<input type="password" class="input-field" id="confirm_password" name="cpass" placeholder="mypass" onchange='check_pass();' required="required" />
+		State:                     <input type="text" class="input-field" name="state"  placeholder="Bihar" pattern="[a-zA-Z]*[ ][a-zA-Z]*" minlength="3" maxlength="35" required="required">
+		City:                       <input type="text" class="input-field" name="city" placeholder="Mandsaur" pattern="[A-Za-z]*"  minlength="1" maxlength="25" required="required">
+		Pin Code:              <input type="number" class="input-field" name="pin" placeholder="123456" pattern="[0-9]{6}" minlength="6" maxlength="6"  required="required">
+		Address:                <input type="text" class="input-field" name="addr" placeholder="542 W. 15th Street" pattern="[A-Za-z]*" minlength="5" maxlength="50" required="required"><br><br
+                                       <label for="expyear" name="security">               select the security question     </label> <select name="security">
+                                                                                                    
+                                                	  <option value="What Primary school did you attend ?">What Primary school did you attend ?</option>
+                                                    	  <option value="in what city was your first full time job ?">in what city was your first full time job ?</option>
+                                                    	  <option value="in what city did you meet your partner ?">in what city did you meet your partner ?</option>
+                                                       	  <option value="What time of the day where you born ?">What time of the day where you born ?</option>
+                                                	  <option value="in what city did you parents meet?">in what city did you parents meet?</option>
+                                                	  </select>
+                Answer the question :<input type="text" class="input-field" name="answer" placeholder="Enter your answer" required="required"><br>
+            <input type="checkbox" class="chech-box" required="required" /><span>I agree to the terms and conditions</span>
+		<input type="submit" name="submit" value="Register" class="btn"  id="submit" />
+</b>   </div>
+</form></pre>
+</div>
+</div>
+</body>
+   <script>
+       function check_pass()
+        {
+            if(document.getElementById('password').value == document.getElementById('confirm_password').value)
+            {
+                document.getElementById('submit').disabled = false;
+                
+            }
+            else
+            {
+                document.getElementById('submit').disabled = true;
+            }
+        }
+    </script>
+</html>
