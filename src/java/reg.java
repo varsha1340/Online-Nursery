@@ -21,7 +21,7 @@ Connection con;
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             String uname = request.getParameter("uname");
-            String uid = request.getParameter("uid");
+           
             String mob = request.getParameter("mob");
             String email = request.getParameter("email");
             String pass = request.getParameter("pass");
@@ -36,7 +36,7 @@ Connection con;
            con = DriverManager.getConnection("jdbc:derby://localhost:1527/varsha","root","varsha");
            Statement st = con.createStatement();
            ResultSet rs;
-           int i = st.executeUpdate("insert into register values('"+uname+"','"+uid+"','"+mob+"','"+email+"','"+pass+"','"+cpass+"','"+state+"','"+city+"','"+pin+"','"+addr+"','"+security+"','"+answer+"')");
+           int i = st.executeUpdate("insert into register values('"+uname+"','"+mob+"','"+email+"','"+pass+"','"+cpass+"','"+state+"','"+city+"','"+pin+"','"+addr+"','"+security+"','"+answer+"')");
             response.sendRedirect("http://localhost:8080/varsha/signupthanku.html");
             
         } catch (ClassNotFoundException | SQLException ex) {
